@@ -1,6 +1,9 @@
 <h1>Editing coach</h1>
+<% = render 'form' %>
+<%= link_to 'Back', coaches_path %>
 
-<%= form_for :coach, url: coach_path(@coach), method: :patch do |f| %>
+
+<!-- <%= form_for :coach, url: coach_path(@coach), method: :patch do |f| %>
 
   <% if @coach.errors.any? %>
     <div id="error_explanation">
@@ -32,4 +35,4 @@
 
 <% end %>
 
-<%= link_to 'Back', coaches_path %>
+<%= link_to 'Back', coaches_path %> -->

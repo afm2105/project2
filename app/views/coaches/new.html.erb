@@ -1,33 +1,36 @@
 <h1> New Coach</h1>
-<%= form_for :coach, url: coaches_path do |f| %>
+<%= render 'form' %>
+<%= link_to 'Back', coaches_path %>
 
-<% if @coach.errors.any? %>
-<div id ="error explanation">
-  <h2>
-    <%= pluralize(@coach.errors.count, "error") %> prohibited this coach from being saved:
-  </h2>
-  <ul>
-    <% @coach.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
-
-    <% end %>
-  </ul>
-</div>
-<% end %>
-
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
-
-  <p>
-    <%= f.label :tidbits %><br>
-    <%= f.text_field :tidbits %>
-  </p>
-
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
-
-<% link_to 'Back', coaches_path %>
+<!-- <%= form_for :coach, url: coaches_path do |f| %>
+#
+# <% if @coach.errors.any? %>
+# <div id ="error explanation">
+#   <h2>
+#     <%= pluralize(@coach.errors.count, "error") %> prohibited this coach from being saved:
+#   </h2>
+#   <ul>
+#     <% @coach.errors.full_messages.each do |msg| %>
+#     <li><%= msg %></li>
+#
+#     <% end %>
+#   </ul>
+# </div>
+# <% end %>
+#
+#   <p>
+#     <%= f.label :name %><br>
+#     <%= f.text_field :name %>
+#   </p>
+#
+#   <p>
+#     <%= f.label :tidbit %><br>
+#     <%= f.text_field :tidbit %>
+#   </p>
+#
+#   <p>
+#     <%= f.submit %>
+#   </p>
+# <% end %>
+#
+# <% link_to 'Back', coaches_path %> -->

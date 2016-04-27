@@ -27,8 +27,24 @@ class CoachesController < ApplicationController
   end
 end
 
+  def update
+    @coach = Coach.find(params[:id])
+    if @coach.update(article_params)
+      redirect_to @coach
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @coach = Coach.find(params[:id])
+    @coach.destroy
+
+    redirect_to coaches_path
+  end
+
   private
     def coach_params
-      params.require(:coach).permit(:name, :tidbits)
+      params.require(:coach).permit(:name, :tidbit)
     end
 end

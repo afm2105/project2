@@ -4,12 +4,36 @@
   <tr>
     <th> name</th>
     <th> Tidbits</th>
+    <th colspan="2"></th>
   </tr>
 
 <% @coaches.each do |coach| %>
   <tr>
     <td><%= coach.name %></td>
     <td><%= coach.tidbit %></td>
+    <td><%= <link_to 'Show', coach_path(coach) %></td>
+    <td><%= lnk_to 'Edit', edit_coach_path(coach) %></td>
   </tr>
 <% end %>
+</table>
+
+<%= link_to 'New coach', new_coach_path %>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Tidbits</th>
+    <th colspan="3"></th>
+  </tr>
+
+  <% @coaches.each do |coach| %>
+    <tr>
+      <td><%= coach.name %></td>
+      <td><%= coach.tidbit %></td>
+      <td><%= link_to 'Show', coach_path(coach) %></td>
+      <td><%= link_to 'Edit', edit_coach_path(coach) %></td>
+      <td><%= link_to 'Destroy', coach_path(coach),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
 </table>
