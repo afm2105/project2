@@ -1,21 +1,6 @@
-<h1> Listing Coaches</h1>
-<!-- <%= link_to 'New Coach', controller: 'coaches' %>
-<table>
-  <tr>
-    <th> name</th>
-    <th> Tidbits</th>
-    <th colspan="2"></th>
-  </tr>
+<body>
 
-<% @coaches.each do |coach| %>
-  <tr>
-    <td><%= coach.name %></td>
-    <td><%= coach.tidbit %></td>
-    <td><%= link_to 'Show', coach_path(coach) %></td>
-    <td><%= link_to 'Edit', edit_coach_path(coach) %></td>
-  </tr>
-<% end %>
-</table> -->
+<h1> Some NFL Head Coaches</h1>
 
 <%= link_to 'New coach', new_coach_path %>
 <table>
@@ -37,3 +22,4 @@
     </tr>
   <% end %>
 </table>
+</body>
