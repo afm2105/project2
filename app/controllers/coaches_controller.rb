@@ -29,7 +29,7 @@ end
 
   def update
     @coach = Coach.find(params[:id])
-    if @coach.update(article_params)
+    if @coach.update(coach_params)
       redirect_to @coach
     else
       render 'edit'

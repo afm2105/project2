@@ -3178,3 +3178,802 @@ SyntaxError (/Users/antonyscmputer/wdi/project2/app/views/coaches/_form.html.erb
   Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (142.0ms)
+
+
+Started GET "/coaches/10" for ::1 at 2016-04-27 16:56:15 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mCoach Load (0.2ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered coaches/show.html.erb within layouts/application (17.9ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `edit_oach_path' for #<#<Class:0x007fb6b6136bf8>:0x007fb6b6124048>):
+    10: 
+    11: <%= link_to 'Back', coaches_path %>
+    12: 
+    13: <%= link_to 'Edit', edit_oach_path(@coach) %> |
+    14: <%= link_to 'Back', coaches_path %>
+  app/views/coaches/show.html.erb:13:in `_app_views_coaches_show_html_erb__1552323618398573399_70211357698020'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.1ms)
+
+
+Started GET "/coaches/10" for ::1 at 2016-04-27 16:56:42 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered coaches/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 16:56:42 -0400
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 16:56:42 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 16:56:42 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 16:56:42 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 16:56:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 16:56:42 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 16:56:42 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 16:56:42 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 16:56:43 -0400
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 16:56:45 -0400
+Processing by CoachesController#index as HTML
+  Rendered coaches/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/antonyscmputer/wdi/project2/app/views/coaches/index.html.erb:14: syntax error, unexpected '<'
+...reeze;@output_buffer.append=( <link_to 'Show', coach_path(co...
+...                               ^):
+  app/views/coaches/index.html.erb:14: syntax error, unexpected '<'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.1ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.1ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.6ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 16:56:46 -0400
+Processing by CoachesController#index as HTML
+  Rendered coaches/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/antonyscmputer/wdi/project2/app/views/coaches/index.html.erb:14: syntax error, unexpected '<'
+...reeze;@output_buffer.append=( <link_to 'Show', coach_path(co...
+...                               ^):
+  app/views/coaches/index.html.erb:14: syntax error, unexpected '<'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.1ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 16:57:42 -0400
+Processing by CoachesController#index as HTML
+  Rendered coaches/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/antonyscmputer/wdi/project2/app/views/coaches/index.html.erb:14: syntax error, unexpected '<'
+...reeze;@output_buffer.append=( <link_to 'Show', coach_path(co...
+...                               ^):
+  app/views/coaches/index.html.erb:14: syntax error, unexpected '<'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.4ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 17:00:20 -0400
+Processing by CoachesController#index as HTML
+  [1m[35mCoach Load (0.2ms)[0m  SELECT "coaches".* FROM "coaches"
+  Rendered coaches/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:00:20 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:00:20 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 17:00:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 17:00:20 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 17:00:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 17:00:20 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:00:20 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:00:20 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 17:00:20 -0400
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 17:01:02 -0400
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:01:02 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 17:01:02 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:01:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 17:01:02 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 17:01:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 17:01:02 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:01:02 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:01:02 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 17:01:02 -0400
+
+
+Started GET "/coaches/1/edit" for ::1 at 2016-04-27 17:01:07 -0400
+Processing by CoachesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered coaches/edit.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/antonyscmputer/wdi/project2/app/views/coaches/edit.html.erb:2: syntax error, unexpected '=', expecting keyword_end
+'.freeze; = render 'form' 
+           ^):
+  app/views/coaches/edit.html.erb:2: syntax error, unexpected '=', expecting keyword_end
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.4ms)
+
+
+Started GET "/coaches/1/edit" for ::1 at 2016-04-27 17:01:08 -0400
+Processing by CoachesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered coaches/edit.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/antonyscmputer/wdi/project2/app/views/coaches/edit.html.erb:2: syntax error, unexpected '=', expecting keyword_end
+'.freeze; = render 'form' 
+           ^):
+  app/views/coaches/edit.html.erb:2: syntax error, unexpected '=', expecting keyword_end
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.6ms)
+
+
+Started GET "/coaches/1/edit" for ::1 at 2016-04-27 17:04:03 -0400
+Processing by CoachesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered coaches/_form.html.erb (2.7ms)
+  Rendered coaches/edit.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/antonyscmputer/wdi/project2/app/views/coaches/_form.html.erb:1: syntax error, unexpected '=', expecting keyword_end
+...ActionView::OutputBuffer.new; = form_for @coach do |f| 
+...                               ^):
+  app/views/coaches/_form.html.erb:1: syntax error, unexpected '=', expecting keyword_end
+  app/views/coaches/edit.html.erb:2:in `_app_views_coaches_edit_html_erb___4537184596849123770_70211358224180'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.5ms)
+
+
+Started GET "/coaches/1/edit" for ::1 at 2016-04-27 17:04:35 -0400
+Processing by CoachesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered coaches/_form.html.erb (4.3ms)
+  Rendered coaches/edit.html.erb within layouts/application (229.6ms)
+Completed 200 OK in 253ms (Views: 251.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 17:04:35 -0400
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:04:35 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:04:35 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 17:04:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 17:04:35 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 17:04:35 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:04:35 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:04:35 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 17:04:35 -0400
+
+
+Started PATCH "/coaches/1" for ::1 at 2016-04-27 17:05:06 -0400
+Processing by CoachesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S8zY+Ym9NyAfO+5NY9p1GFailzEAvEEOBs41+nyV6HQu41Pkws2J8D4z5nUdX7Si9pVKMSnAnbsMSKxJMy5Ncg==", "coach"=>{"name"=>"Bill Walsh", "tidbit"=>"Won 3 Super Bowls as the San frANCISCO 49ERS HEAD COACH."}, "commit"=>"Update Coach", "id"=>"1"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+NameError (undefined local variable or method `article_params' for #<CoachesController:0x007fb6bb0185f0>):
+  app/controllers/coaches_controller.rb:32:in `update'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.7ms)
+
+
+Started PATCH "/coaches/1" for ::1 at 2016-04-27 17:05:31 -0400
+Processing by CoachesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S8zY+Ym9NyAfO+5NY9p1GFailzEAvEEOBs41+nyV6HQu41Pkws2J8D4z5nUdX7Si9pVKMSnAnbsMSKxJMy5Ncg==", "coach"=>{"name"=>"Bill Walsh", "tidbit"=>"Won 3 Super Bowls as the San frANCISCO 49ERS HEAD COACH."}, "commit"=>"Update Coach", "id"=>"1"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms)
+
+NameError (uninitialized constant CoachesController::COACH_params):
+  app/controllers/coaches_controller.rb:32:in `update'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (77.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (152.6ms)
+
+
+Started PATCH "/coaches/1" for ::1 at 2016-04-27 17:05:52 -0400
+Processing by CoachesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S8zY+Ym9NyAfO+5NY9p1GFailzEAvEEOBs41+nyV6HQu41Pkws2J8D4z5nUdX7Si9pVKMSnAnbsMSKxJMy5Ncg==", "coach"=>{"name"=>"Bill Walsh", "tidbit"=>"Won 3 Super Bowls as the San frANCISCO 49ERS HEAD COACH."}, "commit"=>"Update Coach", "id"=>"1"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "coaches" SET "name" = ?, "tidbit" = ?, "updated_at" = ? WHERE "coaches"."id" = ?  [["name", "Bill Walsh"], ["tidbit", "Won 3 Super Bowls as the San frANCISCO 49ERS HEAD COACH."], ["updated_at", "2016-04-27 21:05:52.437599"], ["id", 1]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coaches/1
+Completed 302 Found in 13ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/coaches/1" for ::1 at 2016-04-27 17:05:52 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered coaches/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:05:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 17:05:52 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 17:05:52 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 17:05:52 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:05:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 17:05:52 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:05:52 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:05:52 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 17:05:52 -0400
+
+
+Started GET "/coaches/1/edit" for ::1 at 2016-04-27 17:05:57 -0400
+Processing by CoachesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered coaches/_form.html.erb (2.2ms)
+  Rendered coaches/edit.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/coaches/1" for ::1 at 2016-04-27 17:06:18 -0400
+Processing by CoachesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZNpugV8H8aGp4hV4Xkg589d1NdY/EV3QmS6+a0s4iwIB9eWcFHdPcYjqHUAgzfhJd0Lo1hZtgWWTqCfYBIMuBA==", "coach"=>{"name"=>"Bill Walsh", "tidbit"=>"Won 3 Super Bowls as the San Francisco 49ers head coach."}, "commit"=>"Update Coach", "id"=>"1"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "coaches" SET "tidbit" = ?, "updated_at" = ? WHERE "coaches"."id" = ?  [["tidbit", "Won 3 Super Bowls as the San Francisco 49ers head coach."], ["updated_at", "2016-04-27 21:06:18.219219"], ["id", 1]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coaches/1
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/coaches/1" for ::1 at 2016-04-27 17:06:18 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered coaches/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 17:06:19 -0400
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/coaches/2" for ::1 at 2016-04-27 17:06:26 -0400
+Processing by CoachesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cbCOovylzzrXmREYV2KnAOcVmylCctltlDwk4J26yHsUnwW/t9Vx6vaRGSAp52a6RyJGKWsOBdieur1T0gFtfQ==", "id"=>"2"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "coaches" WHERE "coaches"."id" = ?  [["id", 2]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coaches
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 17:06:26 -0400
+Processing by CoachesController#index as HTML
+  [1m[35mCoach Load (0.3ms)[0m  SELECT "coaches".* FROM "coaches"
+  Rendered coaches/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/coaches/3" for ::1 at 2016-04-27 17:06:30 -0400
+Processing by CoachesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nTH8D0zs1jsN1zFicv4ZuT+HR23hABfK6rZdU00S7h74HncSB5xo6yzfOVoMe9gDn7Cabch8y3/gMMTgAqlLGA==", "id"=>"3"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "coaches" WHERE "coaches"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/coaches
+Completed 302 Found in 4ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 17:06:30 -0400
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (10.7ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 32ms (Views: 21.2ms | ActiveRecord: 10.7ms)
+
+
+Started DELETE "/coaches/5" for ::1 at 2016-04-27 17:06:34 -0400
+Processing by CoachesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PlIAcL7L3GIxkvru4z/A3/yfQFe/k+xwK/veDjRw+ChbfYtt9btishCa8tadugFlXKidV5bvMMUhfUe9e8tdLg==", "id"=>"5"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "coaches" WHERE "coaches"."id" = ?  [["id", 5]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coaches
+Completed 302 Found in 4ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 17:06:35 -0400
+Processing by CoachesController#index as HTML
+  [1m[35mCoach Load (0.2ms)[0m  SELECT "coaches".* FROM "coaches"
+  Rendered coaches/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/coaches/6" for ::1 at 2016-04-27 17:06:38 -0400
+Processing by CoachesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uV9/OpdXBOjaeG8s/uxTZUzxEsgO5/Zn3mBuIUMl2qfccPQn3Ce6OPtwZxSAaZLf7MbPyCebKtLU5veSDJ5/oQ==", "id"=>"6"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "coaches" WHERE "coaches"."id" = ?[0m  [["id", 6]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/coaches
+Completed 302 Found in 5ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 17:06:38 -0400
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coaches/7/edit" for ::1 at 2016-04-27 17:06:39 -0400
+Processing by CoachesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered coaches/_form.html.erb (1.8ms)
+  Rendered coaches/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/coaches/7" for ::1 at 2016-04-27 17:07:37 -0400
+Processing by CoachesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YmhDt5b19xvp61TRP6eWbCff6fUkV3TAASZBgM92y9MHR8iq3YVJy8jjXOlBIlfWh+g09Q0rqHULoNgzgM1u1Q==", "coach"=>{"name"=>"Bill Parcells", "tidbit"=>"His first NFL head coaching job was with the NY Giants."}, "commit"=>"Update Coach", "id"=>"7"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "coaches" SET "name" = ?, "tidbit" = ?, "updated_at" = ? WHERE "coaches"."id" = ?[0m  [["name", "Bill Parcells"], ["tidbit", "His first NFL head coaching job was with the NY Giants."], ["updated_at", "2016-04-27 21:07:37.253039"], ["id", 7]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/coaches/7
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/coaches/7" for ::1 at 2016-04-27 17:07:37 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered coaches/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 137ms (Views: 136.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 17:07:40 -0400
+Processing by CoachesController#index as HTML
+  [1m[35mCoach Load (0.1ms)[0m  SELECT "coaches".* FROM "coaches"
+  Rendered coaches/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/coaches/8" for ::1 at 2016-04-27 17:07:48 -0400
+Processing by CoachesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TuCCA1L6l7WcjWyCrs2YSii5nM88MXajZEAwPZ7bOoorzwkeGYopZb2FZLrQSFnwiI5BzxVNqhZuxqmO0WCfjA==", "id"=>"8"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "coaches" WHERE "coaches"."id" = ?[0m  [["id", 8]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/coaches
+Completed 302 Found in 6ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 17:07:48 -0400
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/coaches/9" for ::1 at 2016-04-27 17:07:51 -0400
+Processing by CoachesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"F0iM47/9GoJFXVoEhXqHylv/8x6xPLUY7eHaOJIT4ctyZwf+9I2kUmRVUjz7/0Zw+8guHphAaa3nZ0OL3ahEzQ==", "id"=>"9"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "coaches" WHERE "coaches"."id" = ?  [["id", 9]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coaches
+Completed 302 Found in 3ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 17:07:51 -0400
+Processing by CoachesController#index as HTML
+  [1m[35mCoach Load (0.2ms)[0m  SELECT "coaches".* FROM "coaches"
+  Rendered coaches/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/coaches/10" for ::1 at 2016-04-27 17:07:54 -0400
+Processing by CoachesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UcZV+QF2tc0gu8Ry5tTimlID798HW9avmNSNUu3p+Rw06d7kSgYLHQGzzEqYUSMg8jQy3y4nChqSUhTholJcGg==", "id"=>"10"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "coaches" WHERE "coaches"."id" = ?[0m  [["id", 10]]
+  [1m[35m (5.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/coaches
+Completed 302 Found in 8ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 17:07:54 -0400
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coaches/4/edit" for ::1 at 2016-04-27 17:07:55 -0400
+Processing by CoachesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered coaches/_form.html.erb (2.0ms)
+  Rendered coaches/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/coaches/4" for ::1 at 2016-04-27 17:09:50 -0400
+Processing by CoachesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"edvbmV7p1Q7X0jh+RfUDzKg7MX6upIZRkW7WSckKHdMc9FCEFZlr3vbaMEY7cMJ2CAzsfofYWuSb6E/6hrG41Q==", "coach"=>{"name"=>"Pete Carroll", "tidbit"=>"One of only three men to have won both a Super Bowl and a college football Division 1 national championship as a head coach."}, "commit"=>"Update Coach", "id"=>"4"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "coaches" SET "tidbit" = ?, "updated_at" = ? WHERE "coaches"."id" = ?[0m  [["tidbit", "One of only three men to have won both a Super Bowl and a college football Division 1 national championship as a head coach."], ["updated_at", "2016-04-27 21:09:50.381144"], ["id", 4]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/coaches/4
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/coaches/4" for ::1 at 2016-04-27 17:09:50 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered coaches/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 17:09:52 -0400
+Processing by CoachesController#index as HTML
+  [1m[35mCoach Load (0.1ms)[0m  SELECT "coaches".* FROM "coaches"
+  Rendered coaches/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 17:09:57 -0400
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coaches/4" for ::1 at 2016-04-27 17:10:28 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered coaches/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:10:28 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 17:10:28 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 17:10:28 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:10:28 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 17:10:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 17:10:28 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:10:28 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:10:28 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 17:10:28 -0400
+
+
+Started GET "/coaches/4" for ::1 at 2016-04-27 17:11:00 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered coaches/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:11:00 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:11:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 17:11:00 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 17:11:00 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 17:11:00 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 17:11:00 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:11:00 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:11:00 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 17:11:00 -0400
+
+
+Started GET "/coaches/4" for ::1 at 2016-04-27 17:11:25 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered coaches/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 17:11:25 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:11:25 -0400
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:11:25 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 17:11:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 17:11:25 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 17:11:25 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:11:25 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:11:25 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 17:11:25 -0400
+
+
+Started GET "/coaches/4" for ::1 at 2016-04-27 17:11:33 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered coaches/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:11:33 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 17:11:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 17:11:33 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 17:11:33 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 17:11:33 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 17:11:33 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:11:33 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 17:11:33 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 17:11:33 -0400
