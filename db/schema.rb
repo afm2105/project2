@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20160426225238) do
 
   create_table "coaches", force: :cascade do |t|
     t.string   "name"
-    t.text     "tidbits"
+    t.text     "tidbit"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

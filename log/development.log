@@ -1136,3 +1136,996 @@ ActionView::Template::Error (undefined method `tidbits' for #<Coach:0x007fd3ca03
   Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.8ms)
+  [1m[36mCoach Load (8.1ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  [1m[35mCoach Load (0.2ms)[0m  SELECT  "coaches".* FROM "coaches"  ORDER BY "coaches"."id" ASC LIMIT 1
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT  "coaches".* FROM "coaches"  ORDER BY "coaches"."id" ASC LIMIT 1[0m
+  [1m[35mCoach Load (0.8ms)[0m  SELECT  "coaches".* FROM "coaches"  ORDER BY "coaches"."id" ASC LIMIT 1
+
+
+Started GET "/favicon.ico" for ::1 at 2016-04-27 09:54:11 -0400
+
+LoadError (cannot load such file -- /Users/antonyscmputer/wdi/project2/coaching_facts/config/routes.rb):
+  activesupport (4.2.6) lib/active_support/dependencies.rb:268:in `load'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:268:in `block in load'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:240:in `load_dependency'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:268:in `load'
+  railties (4.2.6) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  railties (4.2.6) lib/rails/application/routes_reloader.rb:40:in `each'
+  railties (4.2.6) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  railties (4.2.6) lib/rails/application/routes_reloader.rb:16:in `reload!'
+  railties (4.2.6) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  activesupport (4.2.6) lib/active_support/file_update_checker.rb:75:in `call'
+  activesupport (4.2.6) lib/active_support/file_update_checker.rb:75:in `execute'
+  railties (4.2.6) lib/rails/application/routes_reloader.rb:7:in `execute'
+  railties (4.2.6) lib/rails/application/finisher.rb:81:in `block (2 levels) in <module:Finisher>'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:446:in `instance_exec'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:446:in `block in make_lambda'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:192:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:192:in `block in simple'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_prepare_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:83:in `prepare!'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:71:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/antonyscmputer/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/antonyscmputer/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/antonyscmputer/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (106.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (323.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (385.2ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2016-04-27 09:54:16 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/antonyscmputer/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/antonyscmputer/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/antonyscmputer/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (82.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.4ms)
+
+
+Started GET "/coaches/4" for ::1 at 2016-04-27 09:54:27 -0400
+
+ActionController::RoutingError (No route matches [GET] "/coaches/4"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/antonyscmputer/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/antonyscmputer/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/antonyscmputer/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (77.1ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.5ms)
+
+
+Started GET "/coaches/4" for ::1 at 2016-04-27 09:55:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCoach Load (0.2ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered coaches/show.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `tidbits' for #<Coach:0x007f80ecfd4a48>):
+    5: 
+    6: <p>
+    7:   <strong> Tidbits:</strong>
+    8:   <%= @coach.tidbits %>
+    9: </p>
+  app/views/coaches/show.html.erb:8:in `_app_views_coaches_show_html_erb__268360796377168041_70095875777680'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (94.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (177.1ms)
+
+
+Started GET "/coaches/4" for ::1 at 2016-04-27 09:56:02 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered coaches/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `tidbits' for #<Coach:0x007f80ef946228>):
+    5: 
+    6: <p>
+    7:   <strong> Tidbits:</strong>
+    8:   <%= @coach.tidbits %>
+    9: </p>
+  app/views/coaches/show.html.erb:8:in `_app_views_coaches_show_html_erb__268360796377168041_70095875777680'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.4ms)
+
+
+Started GET "/coaches/4" for ::1 at 2016-04-27 09:57:04 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCoach Load (0.2ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered coaches/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 393ms (Views: 392.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 09:57:05 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 09:57:05 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 09:57:05 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 09:57:05 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 09:57:05 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 09:57:05 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 09:57:05 -0400
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 09:57:05 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 09:57:05 -0400
+
+
+Started POST "/coaches" for ::1 at 2016-04-27 09:57:19 -0400
+Processing by CoachesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UwegFz/qlppqL0HM1lP9dvGs7WaE1S2uyCq2tWrSxzY2KCsKdJooSksnSfSo1jzMUZswZq2p8RvCrC8GJWliMA==", "coach"=>{"name"=>"Bill Parcells", "tidnits"=>"His first NFL head coaching job was with the NY Giants."}, "commit"=>"Save Coach"}
+Unpermitted parameter: tidnits
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "coaches" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Bill Parcells"], ["created_at", "2016-04-27 13:57:19.878289"], ["updated_at", "2016-04-27 13:57:19.878289"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coaches/5
+Completed 302 Found in 50ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/coaches/5" for ::1 at 2016-04-27 09:57:19 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered coaches/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/coaches" for ::1 at 2016-04-27 09:57:51 -0400
+Processing by CoachesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UwegFz/qlppqL0HM1lP9dvGs7WaE1S2uyCq2tWrSxzY2KCsKdJooSksnSfSo1jzMUZswZq2p8RvCrC8GJWliMA==", "coach"=>{"name"=>"Bill Parcells", "tidnits"=>"His first NFL head coaching jbo was with the NY Giants.."}, "commit"=>"Save Coach"}
+Unpermitted parameter: tidnits
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "coaches" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Bill Parcells"], ["created_at", "2016-04-27 13:57:51.463854"], ["updated_at", "2016-04-27 13:57:51.463854"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coaches/6
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/coaches/6" for ::1 at 2016-04-27 09:57:51 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered coaches/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/coaches/6" for ::1 at 2016-04-27 09:58:51 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered coaches/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 09:58:51 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 09:58:51 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 09:58:51 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 09:58:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 09:58:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 09:58:51 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 09:58:51 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 09:58:51 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 09:58:51 -0400
+
+
+Started GET "/coaches/6" for ::1 at 2016-04-27 09:58:59 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered coaches/show.html.erb within layouts/application (19.2ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `tidbits' for #<Coach:0x007f80ebd37138>):
+    5: 
+    6: <p>
+    7:   <strong> Tidbits:</strong>
+    8:   <%= @coach.tidbits %>
+    9: </p>
+  app/views/coaches/show.html.erb:8:in `_app_views_coaches_show_html_erb__268360796377168041_70095851978680'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.0ms)
+
+
+Started GET "/coaches/6" for ::1 at 2016-04-27 09:59:05 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered coaches/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 09:59:05 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 09:59:05 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 09:59:05 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 09:59:05 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 09:59:05 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 09:59:05 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 09:59:05 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 09:59:05 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 09:59:05 -0400
+
+
+Started GET "/coaches/6" for ::1 at 2016-04-27 09:59:18 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered coaches/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 09:59:18 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 09:59:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 09:59:18 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 09:59:18 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 09:59:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 09:59:18 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 09:59:18 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 09:59:18 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 09:59:18 -0400
+
+
+Started GET "/coaches/6" for ::1 at 2016-04-27 10:00:50 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered coaches/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 10:00:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 10:00:50 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 10:00:50 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 10:00:50 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 10:00:50 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 10:00:50 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 10:00:50 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 10:00:50 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 10:00:50 -0400
+
+
+Started GET "/coaches/6" for ::1 at 2016-04-27 10:04:53 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered coaches/show.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `tidbits' for #<Coach:0x007f80f09e43a0>):
+    5: 
+    6: <p>
+    7:   <strong> Tidbits:</strong>
+    8:   <%= @coach.tidbits %>
+    9: </p>
+  app/views/coaches/show.html.erb:8:in `_app_views_coaches_show_html_erb__268360796377168041_70095885493040'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.1ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (130.9ms)
+
+
+Started GET "/coaches/6" for ::1 at 2016-04-27 10:05:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered coaches/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `tidbits' for #<Coach:0x007f80f215ab10>):
+    5: 
+    6: <p>
+    7:   <strong> Tidbits:</strong>
+    8:   <%= @coach.tidbits %>
+    9: </p>
+  app/views/coaches/show.html.erb:8:in `_app_views_coaches_show_html_erb__268360796377168041_70095885493040'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.8ms)
+
+
+Started GET "/coaches/6" for ::1 at 2016-04-27 10:05:03 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered coaches/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `tidbits' for #<Coach:0x007f80f0e21080>):
+    5: 
+    6: <p>
+    7:   <strong> Tidbits:</strong>
+    8:   <%= @coach.tidbits %>
+    9: </p>
+  app/views/coaches/show.html.erb:8:in `_app_views_coaches_show_html_erb__268360796377168041_70095885493040'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.5ms)
+
+
+Started GET "/coaches/6" for ::1 at 2016-04-27 10:05:17 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered coaches/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 10:05:17 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 10:05:17 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 10:05:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 10:05:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 10:05:18 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 10:05:18 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 10:05:18 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 10:05:18 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 10:05:18 -0400
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCoaches (20160426225238)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "coaches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "tidbit" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160426225238"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCoaches (20160426225238)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "coaches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "tidbit" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160426225238"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (19.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCoaches (20160426225238)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "coaches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "tidbit" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160426225238"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (3.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCoaches (20160426225238)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "coaches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "tidbit" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160426225238"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCoaches (20160426225238)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "coaches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "tidbit" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160426225238"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-04-27 13:27:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 460ms (Views: 421.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 13:27:28 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 13:27:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 13:27:28 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 13:27:28 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 13:27:28 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 13:27:28 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 13:27:28 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 13:27:28 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 13:27:28 -0400
+
+
+Started GET "/coaches/new" for ::1 at 2016-04-27 13:27:36 -0400
+Processing by CoachesController#new as HTML
+  Rendered coaches/new.html.erb within layouts/application (230.4ms)
+Completed 200 OK in 256ms (Views: 255.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/coaches" for ::1 at 2016-04-27 13:28:32 -0400
+Processing by CoachesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xxwLMYRsefRzkl7Tux+guwlPM3VvszfS7ZED9vSkRgGiM4AszxzHJFKaVuvFmmEBqXjudUbP62fnF5pFux/jBw==", "coach"=>{"name"=>"Bill Wlsh", "tidbits"=>"test test"}, "commit"=>"Save Coach"}
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'tidbits' for Coach.):
+  app/controllers/coaches_controller.rb:11:in `create'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (333.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (415.8ms)
+
+
+Started POST "/coaches" for ::1 at 2016-04-27 13:30:29 -0400
+Processing by CoachesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xxwLMYRsefRzkl7Tux+guwlPM3VvszfS7ZED9vSkRgGiM4AszxzHJFKaVuvFmmEBqXjudUbP62fnF5pFux/jBw==", "coach"=>{"name"=>"Bill Wlsh", "tidbits"=>"test test"}, "commit"=>"Save Coach"}
+Unpermitted parameter: tidbits
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "coaches" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Bill Wlsh"], ["created_at", "2016-04-27 17:30:29.780014"], ["updated_at", "2016-04-27 17:30:29.780014"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/coaches/1
+Completed 302 Found in 39ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/coaches/1" for ::1 at 2016-04-27 13:30:29 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered coaches/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 95ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 13:30:30 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 13:30:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 13:30:30 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 13:30:30 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 13:30:30 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 13:30:30 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 13:30:30 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 13:30:30 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 13:30:30 -0400
+
+
+Started GET "/coaches/1" for ::1 at 2016-04-27 13:32:02 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCoach Load (0.2ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered coaches/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30ms (Views: 19.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 13:32:02 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 13:32:02 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 13:32:02 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 13:32:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 13:32:02 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 13:32:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 13:32:02 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 13:32:02 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 13:32:02 -0400
+
+
+Started GET "/coaches/" for ::1 at 2016-04-27 13:32:06 -0400
+
+AbstractController::ActionNotFound (The action 'index' could not be found for CoachesController):
+  actionpack (4.2.6) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/antonyscmputer/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/antonyscmputer/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/antonyscmputer/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-27 13:32:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coaches/new" for ::1 at 2016-04-27 13:32:17 -0400
+Processing by CoachesController#new as HTML
+  Rendered coaches/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/coaches" for ::1 at 2016-04-27 13:32:36 -0400
+Processing by CoachesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q+IqoY5iLHY+D6xdRd4ZBWeKxr+AnhTONOMXwgO4QzUmzaG8xRKSph8HpGU7W9i/x70bv6niyHs+ZY5xTAPmMw==", "coach"=>{"name"=>"Pete Carroll", "tidbits"=>"has won  Super bowl"}, "commit"=>"Save Coach"}
+Unpermitted parameter: tidbits
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "coaches" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Pete Carroll"], ["created_at", "2016-04-27 17:32:36.186400"], ["updated_at", "2016-04-27 17:32:36.186400"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coaches/2
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/coaches/2" for ::1 at 2016-04-27 13:32:36 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered coaches/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/coaches" for ::1 at 2016-04-27 13:32:48 -0400
+Processing by CoachesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q+IqoY5iLHY+D6xdRd4ZBWeKxr+AnhTONOMXwgO4QzUmzaG8xRKSph8HpGU7W9i/x70bv6niyHs+ZY5xTAPmMw==", "coach"=>{"name"=>"Pete Carroll", "tidbits"=>"has won  Super bowl"}, "commit"=>"Save Coach"}
+Unpermitted parameter: tidbits
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "coaches" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Pete Carroll"], ["created_at", "2016-04-27 17:32:48.622447"], ["updated_at", "2016-04-27 17:32:48.622447"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coaches/3
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/coaches/3" for ::1 at 2016-04-27 13:32:48 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCoach Load (0.2ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered coaches/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/coaches" for ::1 at 2016-04-27 13:50:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CoachesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q+IqoY5iLHY+D6xdRd4ZBWeKxr+AnhTONOMXwgO4QzUmzaG8xRKSph8HpGU7W9i/x70bv6niyHs+ZY5xTAPmMw==", "coach"=>{"name"=>"Pete Carroll", "tidbits"=>"has won  Super bowl"}, "commit"=>"Save Coach"}
+Unpermitted parameter: tidbits
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "coaches" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Pete Carroll"], ["created_at", "2016-04-27 17:50:01.151078"], ["updated_at", "2016-04-27 17:50:01.151078"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/coaches/4
+Completed 302 Found in 22ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/coaches/4" for ::1 at 2016-04-27 13:50:01 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered coaches/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coaches/4" for ::1 at 2016-04-27 13:50:13 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered coaches/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/coaches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 13:50:13 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-27 13:50:13 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 13:50:13 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 13:50:13 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 13:50:13 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 13:50:13 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 13:50:13 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 13:50:13 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 13:50:13 -0400
+
+
+Started GET "/coaches/4" for ::1 at 2016-04-27 13:55:23 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCoach Load (0.1ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered coaches/show.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `tidbits' for #<Coach:0x007fb6b8da6e90>):
+    5: 
+    6: <p>
+    7:   <strong> Tidbits:</strong>
+    8:   <%= @coach.tidbits %>
+    9: </p>
+  app/views/coaches/show.html.erb:8:in `_app_views_coaches_show_html_erb__1552323618398573399_70211381032360'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.8ms)

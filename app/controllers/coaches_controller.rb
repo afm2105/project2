@@ -8,7 +8,7 @@ class CoachesController < ApplicationController
 
   def create
     # render plain: params [:coach].inspect
-    @coach = Coach.new(params.require(:coach).permit(:name, :tidbits))
+    @coach = Coach.new(params.require(:coach).permit(:name, :tidbit))
 
     @coach.save
     redirect_to @coach
