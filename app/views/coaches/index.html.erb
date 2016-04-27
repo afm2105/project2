@@ -1,0 +1,15 @@
+<h1> Listing Coaches</h1>
+<%= link_to 'New Coach', controller: 'coaches' %>
+<table>
+  <tr>
+    <th> name</th>
+    <th> Tidbits</th>
+  </tr>
+
+<% @coaches.each do |coach| %>
+  <tr>
+    <td><%= coach.name %></td>
+    <td><%= coach.tidbit %></td>
+  </tr>
+<% end %>
+</table>
