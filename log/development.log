@@ -7804,3 +7804,371 @@ Processing by CoachesController#show as HTML
   [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 7]]
   Rendered coaches/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 19:31:03 -0400
+Processing by CoachesController#index as HTML
+  [1m[35mCoach Load (0.2ms)[0m  SELECT "coaches".* FROM "coaches"
+  Rendered coaches/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 146ms (Views: 145.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.self-4e2902a0a0bad15deaba719795efb62ea155417913dff30fb3696f6188308089.css?body=1" for ::1 at 2016-04-27 19:31:03 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 19:31:03 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 19:31:03 -0400
+
+
+Started GET "/assets/coaches.self-65d601948ace4684d3c2ed0d53ef381216dbd14078f1af01a4988533ce178dab.css?body=1" for ::1 at 2016-04-27 19:31:03 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 19:31:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 19:31:03 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 19:31:03 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 19:31:03 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 19:31:03 -0400
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 19:31:16 -0400
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/coaches.self-65d601948ace4684d3c2ed0d53ef381216dbd14078f1af01a4988533ce178dab.css?body=1" for ::1 at 2016-04-27 19:31:16 -0400
+
+
+Started GET "/assets/welcome.self-4e2902a0a0bad15deaba719795efb62ea155417913dff30fb3696f6188308089.css?body=1" for ::1 at 2016-04-27 19:31:16 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 19:31:16 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 19:31:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 19:31:16 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 19:31:16 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 19:31:16 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 19:31:16 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 19:31:16 -0400
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 19:31:20 -0400
+Processing by CoachesController#index as HTML
+  [1m[35mCoach Load (0.1ms)[0m  SELECT "coaches".* FROM "coaches"
+  Rendered coaches/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/coaches.self-65d601948ace4684d3c2ed0d53ef381216dbd14078f1af01a4988533ce178dab.css?body=1" for ::1 at 2016-04-27 19:31:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 19:31:20 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 19:31:20 -0400
+
+
+Started GET "/assets/welcome.self-4e2902a0a0bad15deaba719795efb62ea155417913dff30fb3696f6188308089.css?body=1" for ::1 at 2016-04-27 19:31:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 19:31:20 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 19:31:20 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 19:31:20 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 19:31:20 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 19:31:20 -0400
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 19:31:26 -0400
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/coaches.self-65d601948ace4684d3c2ed0d53ef381216dbd14078f1af01a4988533ce178dab.css?body=1" for ::1 at 2016-04-27 19:31:26 -0400
+
+
+Started GET "/assets/welcome.self-4e2902a0a0bad15deaba719795efb62ea155417913dff30fb3696f6188308089.css?body=1" for ::1 at 2016-04-27 19:31:26 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 19:31:26 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 19:31:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 19:31:26 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 19:31:26 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 19:31:26 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 19:31:26 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 19:31:26 -0400
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 19:32:08 -0400
+Processing by CoachesController#index as HTML
+  [1m[35mCoach Load (0.2ms)[0m  SELECT "coaches".* FROM "coaches"
+  Rendered coaches/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/coaches.self-65d601948ace4684d3c2ed0d53ef381216dbd14078f1af01a4988533ce178dab.css?body=1" for ::1 at 2016-04-27 19:32:08 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 19:32:08 -0400
+
+
+Started GET "/assets/welcome.self-4e2902a0a0bad15deaba719795efb62ea155417913dff30fb3696f6188308089.css?body=1" for ::1 at 2016-04-27 19:32:08 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 19:32:08 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 19:32:08 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 19:32:08 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 19:32:08 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 19:32:08 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 19:32:08 -0400
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 19:32:49 -0400
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `photo' for #<Coach:0x007fb6b8892788>):
+    15:     <tr>
+    16:       <td><%= coach.name %></td>
+    17:       <td><%= coach.tidbit %></td>
+    18:       <td><%= coach.photo %></td>
+    19:       <td><%= link_to 'Show', coach_path(coach) %></td>
+    20:       <td><%= link_to 'Edit', edit_coach_path(coach) %></td>
+    21:       <td><%= link_to 'Destroy', coach_path(coach),
+  app/views/coaches/index.html.erb:18:in `block in _app_views_coaches_index_html_erb___4248364819053771675_70211378746860'
+  app/views/coaches/index.html.erb:14:in `_app_views_coaches_index_html_erb___4248364819053771675_70211378746860'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (114.0ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (187.0ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 19:33:24 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `photo' for #<Coach:0x007fb6bb423898>):
+    15:     <tr>
+    16:       <td><%= coach.name %></td>
+    17:       <td><%= coach.tidbit %></td>
+    18:       <td><%= coach.photo %></td>
+    19:       <td><%= link_to 'Show', coach_path(coach) %></td>
+    20:       <td><%= link_to 'Edit', edit_coach_path(coach) %></td>
+    21:       <td><%= link_to 'Destroy', coach_path(coach),
+  app/views/coaches/index.html.erb:18:in `block in _app_views_coaches_index_html_erb___4248364819053771675_70211378746860'
+  app/views/coaches/index.html.erb:14:in `_app_views_coaches_index_html_erb___4248364819053771675_70211378746860'
+
+
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.8ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.2ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/antonyscmputer/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (142.8ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 19:34:09 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 139ms (Views: 137.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.self-4e2902a0a0bad15deaba719795efb62ea155417913dff30fb3696f6188308089.css?body=1" for ::1 at 2016-04-27 19:34:09 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 19:34:09 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 19:34:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 19:34:09 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 19:34:09 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 19:34:09 -0400
+
+
+Started GET "/assets/coaches.self-65d601948ace4684d3c2ed0d53ef381216dbd14078f1af01a4988533ce178dab.css?body=1" for ::1 at 2016-04-27 19:34:09 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 19:34:09 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 19:34:09 -0400
+
+
+Started GET "/" for ::1 at 2016-04-27 19:34:14 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 19:34:15 -0400
+Processing by CoachesController#index as HTML
+  [1m[35mCoach Load (0.2ms)[0m  SELECT "coaches".* FROM "coaches"
+  Rendered coaches/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coaches/7" for ::1 at 2016-04-27 19:34:17 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCoach Load (0.1ms)[0m  [1mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered coaches/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 20:14:34 -0400
+Processing by CoachesController#index as HTML
+  [1m[35mCoach Load (75.2ms)[0m  SELECT "coaches".* FROM "coaches"
+  Rendered coaches/index.html.erb within layouts/application (91.1ms)
+Completed 200 OK in 462ms (Views: 377.7ms | ActiveRecord: 75.2ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 20:14:46 -0400
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (0.2ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 88ms (Views: 87.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 20:15:45 -0400
+Processing by CoachesController#index as HTML
+  [1m[35mCoach Load (28.0ms)[0m  SELECT "coaches".* FROM "coaches"
+  Rendered coaches/index.html.erb within layouts/application (45.8ms)
+Completed 200 OK in 221ms (Views: 192.3ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 20:18:05 -0400
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (16.0ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 289ms (Views: 271.9ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/coaches/7" for ::1 at 2016-04-27 20:18:11 -0400
+Processing by CoachesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mCoach Load (0.3ms)[0m  SELECT  "coaches".* FROM "coaches" WHERE "coaches"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered coaches/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coaches" for ::1 at 2016-04-27 20:19:16 -0400
+Processing by CoachesController#index as HTML
+  [1m[36mCoach Load (8.1ms)[0m  [1mSELECT "coaches".* FROM "coaches"[0m
+  Rendered coaches/index.html.erb within layouts/application (86.4ms)
+Completed 200 OK in 268ms (Views: 259.0ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/assets/coaches.self-65d601948ace4684d3c2ed0d53ef381216dbd14078f1af01a4988533ce178dab.css?body=1" for ::1 at 2016-04-27 20:19:16 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-27 20:19:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-27 20:19:16 -0400
+
+
+Started GET "/assets/coaches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 20:19:16 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-27 20:19:16 -0400
+
+
+Started GET "/assets/welcome.self-4e2902a0a0bad15deaba719795efb62ea155417913dff30fb3696f6188308089.css?body=1" for ::1 at 2016-04-27 20:19:16 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-27 20:19:16 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-27 20:19:16 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-27 20:19:16 -0400
+
+
+Started GET "/coaches/new" for ::1 at 2016-04-27 20:19:21 -0400
+Processing by CoachesController#new as HTML
+  Rendered coaches/_form.html.erb (5.4ms)
+  Rendered coaches/new.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 81ms (Views: 80.6ms | ActiveRecord: 0.0ms)
