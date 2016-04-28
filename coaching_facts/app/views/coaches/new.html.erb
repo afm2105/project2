@@ -1,0 +1,16 @@
+<h1> New Coach</h1>
+<%= form_for :coach, url: coaches_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :tidbits %><br>
+    <%= f.text_field :tidbits %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
