@@ -1,4 +1,4 @@
-# projecT2
+# project2
 
 The approach taken was to get a simple website up where people could add NFL coaches to the existing list if they wanted to.
 
